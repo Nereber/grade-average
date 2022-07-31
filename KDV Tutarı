@@ -1,0 +1,22 @@
+## KDV Tutarı
+package Kafa;
+import java.util.Scanner;
+
+public class Kelle {
+    public static void main(String[] args) {
+        double kdvOran, kdv, kdvsizFiyat, kdvliFiyat;
+        boolean kdvDurumu;
+
+        // Kullanıcıdan verileri al
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Ürün Tutarını Giriniz: ");
+        kdvsizFiyat = scanner.nextDouble();
+//Kdvoranını belirliyorum
+        kdvDurumu=(kdvsizFiyat<1000)&&(kdvsizFiyat>0);
+        kdvOran=kdvDurumu?0.18 : 0.08;
+
+        kdv=kdvsizFiyat*kdvOran;
+        kdvliFiyat=kdv+kdvsizFiyat;
+        System.out.println(kdvliFiyat);
+    }
+}
