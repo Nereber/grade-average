@@ -1,0 +1,15 @@
+## package Baslangic;
+import java.util.Scanner;
+public class Giris {
+   public static void main(String[] args) {
+      double size,kilo,bodyMassIndex;
+
+      Scanner gemı=new Scanner (System.in);
+      System.out.println("Enter Size :");
+      size=gemı.nextDouble();
+
+      System.out.println("Enter Kılo :");
+      kilo=gemı.nextDouble();
+
+      bodyMassIndex=kilo/Math.pow(size,2);
+      System.out.println("Enter bodyMassIndex:"+bodyMassIndex);
