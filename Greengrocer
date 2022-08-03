@@ -1,0 +1,40 @@
+package Baslangic;
+import java.util.Scanner;
+public class Giris {
+   public static void main(String[] args) {
+       /*
+    Java ile kullanıcıların manavdan almış oldukları ürünlerin kilogram değerlerine göre toplam tutarını ekrana
+    yazdıran programı yazın.
+    Armut : 2,14 TL
+    Elma : 3,67 TL
+    Domates : 1,11 TL
+    Muz: 0,95 TL
+    Patlıcan : 5,00 TL
+    */
+      double pear,apple,tomatoes,banana,eggPlant,kilo,total;
+
+
+      Scanner abc=new Scanner(System.in);
+
+      System.out.print("Enter pear kilo:");
+      kilo=abc.nextDouble();
+      pear=kilo*2.14d;
+
+      System.out.print("Enter apple kilo:");
+      kilo=abc.nextDouble();
+      apple=kilo*3.67d;
+
+      System.out.print("Enter Tomatoes kilo:");
+      kilo=abc.nextDouble();
+      tomatoes=kilo*1.11d;
+
+      System.out.print("Enter Banana kilo:");
+      kilo=abc.nextDouble();
+banana=kilo*0.95d;
+
+      System.out.print("Enter Eggplant kilo:");
+      kilo=abc.nextDouble();
+      eggPlant=kilo*5.00d;
+
+      total=pear+apple+tomatoes+banana+eggPlant;
+      System.out.print("Enter total:"+total);
