@@ -1,0 +1,18 @@
+### package Baslangic;
+import java.util.Scanner;
+public class Giris {
+   public static void main(String[] args) {
+      int r,merkez;
+      double pi=3.14,dilimAlanı;
+
+      Scanner input=new Scanner(System.in);
+
+      // Daire diliminin alanını bulma
+
+      System.out.print("dairenin yarıçapını giriniz : ");
+      r=input.nextInt();
+
+      System.out.print("merkez açının ölçüsünü giriniz : ");
+      merkez=input.nextInt();
+      dilimAlanı=(pi* (r*r) * merkez) / 360.0;
+      System.out.println("dilim alanı:"+dilimAlanı);
