@@ -17,21 +17,30 @@ public class Main {
         System.out.print("Bir işlem seçiniz:");
         select=input.nextInt();
 
-            switch(select){
-                case 1:
-                    System.out.print("toplama işlemi :"+ (n1+n2));
-                    break;
-                case 2:
-                    System.out.print("Çıkarma işlemi:"+ (n1-n2));
-                    break;
-                case 3:
-                    System.out.println("Çarpma işlemi:"+ (n1*n2));
-                    break;
-                default:
-                        System.out.println("Bölme işlemi:"+ (n1/n2));
+        switch(select){
+            case 1:
+                System.out.print("toplama işlemi :"+ (n1+n2));
+                break;
+            case 2:
+                System.out.print("Çıkarma işlemi:"+ (n1-n2));
+                break;
+            case 3:
+                System.out.println("Çarpma işlemi:"+ (n1*n2));
+                break;
+            case 4:
+                switch (n2){
+                    case 0:
+                        System.out.println("Bir sayı sıfıra bolunemez.Taımlı olamaz");
+                        break;
+                    default:System.out.println("Bolme = "+ (n1 / n2));
+                }
+            break;
+
+            default:
+                System.out.println("Hatalı geçiş yaptınız.1-4 aralığında değer seçiniz");
 
 
-            }
+        }
 
 
 
