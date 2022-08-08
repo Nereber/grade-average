@@ -1,0 +1,47 @@
+package Giris;
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        String userName,passWord,reset,newPassWord;
+
+        Scanner scanner=new Scanner(System.in);
+
+        System.out.print("Kullanıcı adını giriniz:");
+        userName=scanner.nextLine();
+
+        System.out.print("Enter Password:");
+        passWord=scanner.nextLine();
+
+        if (userName.equals("patika") && passWord.equals("java") ){
+            System.out.println(" ***  Giris yaptiniz **** ");
+
+        }
+        else{
+            System.out.println("  Hatali sifre girdiniz yeni sifre belirtmek isterseniz \"yes\"  istemezseniz \" no\"  secin  ");
+            reset=scanner.nextLine();
+
+
+
+            if(reset.equals("no")){
+                System.out.println("İşlem sonlandırıldı");
+
+            } else if (reset.equals("yes")){
+                System.out.println("Cedit şifre belirleyiniz.kadim şifreye muadilse no kadim şifreden farklıysa yes");
+                newPassWord= scanner.nextLine();
+
+
+
+                if(newPassWord.equals("java")){
+                    System.out.println("Meşakkatli giriş yaptınız.Yeniden deneyiniz");
+                }else{
+                    System.out.println("Şifreniz başarıyla yenilenmiştir");
+                }
+            }
+
+            }
+
+
+        }
+        }
