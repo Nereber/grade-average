@@ -1,0 +1,77 @@
+package Giris;
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+     int music,physic,mathematic,literature,chemistry;
+
+
+     Scanner input=new Scanner(System.in);
+
+        System.out.print("Enter Music Note:");
+        music=input.nextInt();
+        if(!(music <= 0 || music> 100)) {
+
+        }else{
+            System.out.println("Değer aralığında not giriniz");
+            System.exit(0);
+        }
+
+
+        System.out.print("Enter Physic Note:");
+        physic=input.nextInt();
+        if(!(music <= 0 || music> 100)) {
+
+        }else{
+            System.out.println("Değer aralığında not giriniz");
+            System.exit(0);
+        }
+
+        System.out.print("Enter Mathematic Note:");
+        mathematic=input.nextInt();
+        if(!(mathematic <= 0 || mathematic> 100)) {
+
+        }else{
+            System.out.print("Değer aralığında not giriniz");
+            System.exit(0);
+        }
+
+        System.out.print("Enter Literature Note:");
+        literature=input.nextInt();
+        if(!(literature <= 0 || literature> 100)) {
+
+        }else{
+            System.out.println("Değer aralığında not giriniz");
+            System.exit(0);
+        }
+
+        System.out.print("Enter Chemistry Note:");
+        chemistry=input.nextInt();
+        if(!(chemistry <= 0 || chemistry> 100)) {
+
+        }else{
+            System.out.print("Değer aralığında not giriniz");
+            System.exit(0);
+        }
+
+        double avarage=(music+physic+mathematic+literature+chemistry)/5;
+
+
+        if(avarage>=55){
+            System.out.println("Sınıfı Geçti");
+
+        }else{
+            System.out.println("Sınıfta Kaldı");
+
+        }
+
+        System.out.println("Mean : "+avarage);
+
+
+
+
+
+
+    }
+}
