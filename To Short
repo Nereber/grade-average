@@ -1,0 +1,43 @@
+## package Giris;
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        int a, b, c;
+
+        Scanner fahri = new Scanner(System.in);
+
+        System.out.println("Enter the first number :");
+        a = fahri.nextInt();
+
+        System.out.println("Enter the second number :");
+        b = fahri.nextInt();
+
+        System.out.println("Enter the third number :");
+        c = fahri.nextInt();
+
+        if ((a > b) && (c > b)) {
+            if (a > c) {
+                System.out.println("a>c>b");
+            } else {
+                System.out.println("c>a>b");
+            }
+
+        } else if ((a > b) && (b > c)) {
+
+            System.out.println("a>b>c");
+        } else if ((b > a) && (b > c)) {
+
+            if ((a > c)) {
+                System.out.println("b>a>c");
+
+            } else
+                System.out.println("b>c>a");
+
+        } else if ((b > a) && (c > b)) {
+            System.out.println("c>b>a");
+
+        }
+    }
+}
